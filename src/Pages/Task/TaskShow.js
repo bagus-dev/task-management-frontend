@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from "react"
 import axios from "axios"
 import { useHistory, useParams } from "react-router-dom"
 import { ProjectContext } from "../../Project/ProjectContext"
-import { Table, Button, Space, Input, Modal, message, Descriptions, PageHeader, Card, Checkbox, Form, Row, Col, Select } from "antd"
-import { DeleteOutlined, EditOutlined, ExclamationCircleOutlined, EyeOutlined, SearchOutlined, PlusOutlined, CheckCircleOutlined, CloseCircleOutlined, SaveOutlined, CheckOutlined } from "@ant-design/icons"
+import { Table, Button, Space, Input, Modal, message, Descriptions, PageHeader, Card, Form, Select } from "antd"
+import { DeleteOutlined, EditOutlined, ExclamationCircleOutlined, SearchOutlined, PlusOutlined, CheckCircleOutlined, CloseCircleOutlined, SaveOutlined, CheckOutlined } from "@ant-design/icons"
 import Highlighter from "react-highlight-words"
 import moment from "moment"
 
@@ -127,6 +127,7 @@ const TaskShow = () => {
         {title: 'Priority', dataIndex: 'priority', render: (text) => (
             <>
                 {
+                    // eslint-disable-next-line
                     text == 1 &&
 
                     <>
@@ -134,6 +135,7 @@ const TaskShow = () => {
                     </>
                 }
                 {
+                    // eslint-disable-next-line
                     text == 2 &&
 
                     <>
@@ -141,6 +143,7 @@ const TaskShow = () => {
                     </>
                 }
                 {
+                    // eslint-disable-next-line
                     text == 3 &&
 
                     <>
@@ -148,6 +151,7 @@ const TaskShow = () => {
                     </>
                 }
                 {
+                    // eslint-disable-next-line
                     text == 4 &&
 
                     <>
@@ -155,6 +159,7 @@ const TaskShow = () => {
                     </>
                 }
                 {
+                    // eslint-disable-next-line
                     text == 5 &&
 
                     <>
@@ -223,6 +228,7 @@ const TaskShow = () => {
         {title: 'Priority', dataIndex: 'priority', render: (text) => (
             <>
                 {
+                    // eslint-disable-next-line
                     text == 1 &&
 
                     <>
@@ -230,6 +236,7 @@ const TaskShow = () => {
                     </>
                 }
                 {
+                    // eslint-disable-next-line
                     text == 2 &&
 
                     <>
@@ -237,6 +244,7 @@ const TaskShow = () => {
                     </>
                 }
                 {
+                    // eslint-disable-next-line
                     text == 3 &&
 
                     <>
@@ -244,6 +252,7 @@ const TaskShow = () => {
                     </>
                 }
                 {
+                    // eslint-disable-next-line
                     text == 4 &&
 
                     <>
@@ -251,6 +260,7 @@ const TaskShow = () => {
                     </>
                 }
                 {
+                    // eslint-disable-next-line
                     text == 5 &&
 
                     <>
@@ -353,6 +363,7 @@ const TaskShow = () => {
             setLoading(true)
 
             const values = {
+                // eslint-disable-next-line
                 'keys': JSON.stringify(selectedRowKeys).replace(/[\[\]']+/g,''),
                 'task_id': id
             }
