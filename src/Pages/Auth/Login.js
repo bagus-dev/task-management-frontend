@@ -51,6 +51,15 @@ const Login = () => {
                         setLoading(false)
                     })
             })
+            .catch((err) => {
+                if(err.response.data.message) {
+                    message.error(err.response.data.message)
+                } else {
+                    message.error(err.message)
+                }
+
+                setLoading(false)
+            })
     }
 
     const onFinishFailed = (errorInfo) => {
